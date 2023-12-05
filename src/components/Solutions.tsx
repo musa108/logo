@@ -29,12 +29,12 @@ const Solutions = () => {
       <main>
         {items.map((item) => (
           <div className="flex justify-center items-center gap-4 my-8">
-            <div className="flex flex-col items-start gap-8">
-              <h1 className="text-[#111010]  text-5xl font-bold w-[580px]">
+            <div className="flex flex-col items-start gap-8 max-lg:ml-4">
+              <h1 className="text-[#111010] lg:text-5xl  text-2xl font-bold lg:w-[580px] w-[388px] ">
                 {item.header}
               </h1>
-              <p className="w-[610px] text-[#616161]">{item.text}</p>
-              <div className="flex items-center gap-3">
+              <p className="lg:w-[610px] text-[#616161] max-lg:text-lg w-[380px]">{item.text}</p>
+              <div className="flex items-center gap-3 max-lg:hidden">
                 <img src={item.image1} alt="" />
                 <img src={item.image2} alt="" />
                 <img src={item.image3} alt="" />
@@ -43,8 +43,8 @@ const Solutions = () => {
                 Learn More
               </button>
             </div>
-            <div className="relative">
-              <img src={item.image4} alt="" />
+            <div className="relative max-lg:hidden">
+              <img src={item.image4} alt="" className=""/>
               <div className="absolute flex items-center gap-1 bg-[#FFF] bottom-0 right-0 p-2">
                 <PlayCircleFilledOutlinedIcon fontSize="large"/>
                 <div className="flex flex-col">

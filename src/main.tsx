@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const App = lazy(() => import("./App.tsx"));
 const Home = lazy(() => import("./pages/Home.tsx"));
 const CatalogPage = lazy(()=> import('./pages/CatalogPage.tsx'))
+const ProductSection = lazy(()=> import('./pages/ProductSection.tsx'))
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,14 @@ const router = createBrowserRouter([
          <CatalogPage/>
       </Suspense>
     )
+  },
+  {
+       path:'/productSection',
+       element:(
+        <Suspense fallback={<div>Loading...</div>}>
+            <ProductSection/>
+        </Suspense>
+       )
   }
 ]);
 

@@ -42,31 +42,39 @@ const Footer = () => {
   return (
     <>
       <footer className="  bg-[#111010]  pt-16 pb-8 px-16">
-        <main className="flex items-center gap-x-56">
-        <section className=" flex flex-col gap-y-12">
-          <img src={logo} alt="logo" className="w-[162px] h-[57px] " />
-          <div className="flex gap-x-4">
-            <Facebook fontSize="small" className="text-[#FFF]" />
-            <Twitter fontSize="small" className="text-[#FFF]" />
-            <Instagram fontSize="small" className="text-[#FFF]" />
-          </div>
-        </section>
-        <section className=" flex items-center gap-x-40">
-            {texts.map((text)=>(
-                <div className="text-[#FFFFFF] text-sm" key={text.id}>
-                    <h1 className=" font-semibold capitalize my-2">{text.header}</h1>
-                    <p className="text-[#A4A4A4]">{text.text1}</p>
-                    <p className="text-[#A4A4A4]">{text.text2}</p>
-                    <p className="text-[#A4A4A4]">{text.text3}</p>
-                    <p className="text-[#A4A4A4]">{text.text4}</p>
-
-                </div>
+        <main className="flex max-xl:flex-col  items-center lg:gap-x-56">
+          <section className=" flex flex-col max-lg:justify-center gap-y-12">
+            <img
+              src={logo}
+              alt="logo"
+              className="lg:w-[162px] w-[122px] lg:h-[57px] h-[42px]"
+            />
+            <div className="flex gap-x-4">
+              <Facebook fontSize="small" className="text-[#FFF]" />
+              <Twitter fontSize="small" className="text-[#FFF]" />
+              <Instagram fontSize="small" className="text-[#FFF]" />
+            </div>
+          </section>
+          <section className=" flex max-lg:flex-col items-center max-lg:justify-center lg:gap-x-40 max-lg:my-4" >
+            {texts.map((text) => (
+              <div className="text-[#FFFFFF] text-sm" key={text.id}>
+                <h1 className=" font-semibold capitalize my-2 text-start max-lg:space-y-8">
+                  {text.header}
+                </h1>
+                <p className="text-[#A4A4A4] max-lg:hidden">{text.text1}</p>
+                <p className="text-[#A4A4A4] max-lg:hidden">{text.text2}</p>
+                <p className="text-[#A4A4A4] max-lg:hidden">{text.text3}</p>
+                <p className="text-[#A4A4A4] max-lg:hidden">{text.text4}</p>
+              </div>
             ))}
-        </section>
+          </section>
         </main>
-        <div className="flex justify-between items-center text-[#FFF] mt-12">
-            <p className=" text-[9px]">Copyright © 2022 | All Rights Reserved.</p>
-            <p className="text-[9px]">Created with love by thecreation.design</p>
+        <hr className="lg:hidden"/>
+        <div className="flex lg:justify-between max-lg:flex-col items-center text-[#FFF] mt-12">
+          <p className=" text-[9px]">
+            Copyright © 2022 | All Rights Reserved.
+          </p>
+          <p className="text-[9px]">Created with love by thecreation.design</p>
         </div>
       </footer>
     </>

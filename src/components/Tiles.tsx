@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import product1 from "../assets/images/product1.png";
 import product2 from "../assets/images/product2.png";
 import product3 from "../assets/images/product3.png";
@@ -82,16 +83,18 @@ const Tiles = () => {
             className="flex flex-col justify-center items-center border-[1px] drop-shadow-sm"
             key={item.id}
           >
-            <img src={item.image} alt="" />
-            <h1 className="text-[#111010] text-2xl font-bold mt-4">
-              {item.name}
-            </h1>
-            <p className="text-[#CACACA] text-sm">
-              {item.oldPrice}{" "}
-              <span className="text-[#B4B4B4] text-lg font-semibold">
-                {item.newPrice}
-              </span>
-            </p>
+            <Link to="/productSection" className="flex flex-col justify-center items-center">
+              <img src={item.image} alt="" />
+              <h1 className="text-[#111010] text-2xl font-bold mt-4">
+                {item.name}
+              </h1>
+              <p className="text-[#CACACA] text-sm my-2">
+                {item.oldPrice}{" "}
+                <span className="text-[#B4B4B4] text-lg font-semibold">
+                  {item.newPrice}
+                </span>
+              </p>
+            </Link>
           </div>
         ))}
       </section>

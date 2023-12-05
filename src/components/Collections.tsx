@@ -6,7 +6,7 @@ const Collections = () => {
   
   return (
     <>
-      <main className="">
+      <main className=" max-lg:hidden">
         <section className="flex flex-col justify-center items-center">
           <h1 className="text-5xl text-[#111010] font-bold text-center border-b-4 p-1">
             Tile Collections

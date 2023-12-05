@@ -2,8 +2,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
+import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/images/Logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 type list = {
   id: number;
@@ -23,10 +24,21 @@ const Header = () => {
   return (
     <>
       <main className="mt-4">
-        <img src={logo} alt="" className="m-auto " />
-        <nav className="flex justify-center items-center gap-32 mt-4">
+        <div className="flex justify-between items-center mx-4 ">
+          <div className="md:hidden">
+            <MenuIcon />
+          </div>
+          <Link to="/" className="m-auto">
+            <img src={logo} alt=""  />
+          </Link>
+          <div className="md:hidden">
+            <ShoppingCartIcon />
+          </div>
+        </div>
+
+        <nav className="flex justify-center items-center gap-32 mt-4 max-lg:hidden">
           <SearchIcon />
-          <div className=" flex justify-center items-center gap-10">
+          <div className=" flex justify-center items-center gap-10 max-lg:hidden">
             {Menus.map((menu) => (
               <ul
                 key={menu.id}
@@ -42,7 +54,7 @@ const Header = () => {
               </ul>
             ))}
           </div>
-          <div className=" flex justify-center items-center gap-4">
+          <div className=" flex justify-center items-center gap-4 max-lg:hidden">
             <ShoppingCartIcon />
             <FavoriteBorderIcon />
             <Person2OutlinedIcon />

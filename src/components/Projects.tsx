@@ -36,10 +36,10 @@ const Projects = () => {
     <>
       <main className=" font-ProximaNova my-16">
         <section className="flex flex-col justify-center items-center">
-          <h1 className="text-5xl text-[#111010] font-bold text-center border-b-4 p-1">
+          <h1 className="text-5xl text-[#111010] font-bold text-center border-b-4 p-1 max-lg:text-2xl max-lg:border-b-2">
             Projects
           </h1>
-          <p className="text-[#616161] text-xl w-[826px] text-center mt-2">
+          <p className="text-[#616161] text-xl w-[826px] text-center mt-2 max-xl:text-sm max-lg:w-[388px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text.
           </p>
@@ -59,6 +59,7 @@ const Projects = () => {
             </div>
           ))}
         </section>
+
         <div className="flex justify-center items-center">
           <button className="bg-[#111010] text-[#FFF] py-2 px-8 uppercase font-bold">
             View All

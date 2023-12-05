@@ -1,4 +1,6 @@
+import CatalogBanner from "../components/CatalogBanner";
 import CatalogHero from "../components/CatalogHero";
+import CatalogSearch from "../components/CatalogSearch";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -11,7 +13,9 @@ const CatalogPage = () => {
         <Header />
         <CatalogHero/>
         <Categories/>
+        <CatalogSearch/>
         <Tiles/>
+        <CatalogBanner/>
         <Footer/>
       </main>
     </>
