@@ -23,7 +23,7 @@ const Footer = () => {
       text4: "Soft Stone",
     },
     {
-      id: 1,
+      id: 2,
       header: "Services",
       text1: "Measurement Service",
       text2: "Product Advice",
@@ -31,7 +31,7 @@ const Footer = () => {
       text4: "",
     },
     {
-      id: 1,
+      id: 3,
       header: "Contact information",
       text1: "3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, ",
       text2: "An Nuzhah, Riyadh 12474, ",

@@ -14,11 +14,11 @@ const Header = () => {
   const Menus: list[] = [
     { id: 1, link: "Home" },
     { id: 2, link: "Spaces" },
-    { id: 2, link: "Products & Services" },
-    { id: 3, link: "Showrooms" },
-    { id: 4, link: "Company" },
-    { id: 5, link: "Media" },
-    { id: 6, link: "Contact" },
+    { id: 3, link: "Products & Services" },
+    { id: 4, link: "Showrooms" },
+    { id: 5, link: "Company" },
+    { id: 6, link: "Media" },
+    { id: 7, link: "Contact" },
   ];
 
   return (

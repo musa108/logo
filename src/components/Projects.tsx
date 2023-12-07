@@ -2,6 +2,9 @@ import kingdomTower from "../assets/images/kingsdom-tower.png";
 import dubaiMall from "../assets/images/dubai-mall.png";
 import kingRoad from "../assets/images/king-road-office.png";
 import beachTower from "../assets/images/beach-tower.png";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useMediaQuery } from "react-responsive";
 
 interface item {
   id: number;
@@ -32,6 +35,8 @@ const Projects = () => {
       text: "Wood Flooring",
     },
   ];
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+
   return (
     <>
       <main className=" font-ProximaNova my-16">
@@ -46,18 +51,22 @@ const Projects = () => {
         </section>
 
         <section className="flex justify-center items-center gap-4 m-8">
-          {items.map((item) => (
-            <div
-              className="flex flex-col justify-center items-center"
-              key={item.id}
-            >
-              <img src={item.image} alt={item.image} />
-              <h1 className="text-[#111010] text-2xl font-semibold">
-                {item.header}
-              </h1>
-              <p className="text-[#616161]">{item.text}</p>
-            </div>
-          ))}
+          {isMobile && (
+            <Carousel>
+              {items.map((item) => (
+                <div
+                  className="flex flex-col justify-center items-center "
+                  key={item.id}
+                >
+                  <img src={item.image} alt={item.image} className="" />
+                  <h1 className="text-[#111010] text-2xl font-semibold">
+                    {item.header}
+                  </h1>
+                  <p className="text-[#616161]">{item.text}</p>
+                </div>
+              ))}
+            </Carousel>
+          )}
         </section>
 
         <div className="flex justify-center items-center">
