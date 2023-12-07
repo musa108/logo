@@ -4,7 +4,7 @@ import kingRoad from "../assets/images/king-road-office.png";
 import beachTower from "../assets/images/beach-tower.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { useMediaQuery } from "react-responsive";
+
 
 interface item {
   id: number;
@@ -35,11 +35,10 @@ const Projects = () => {
       text: "Wood Flooring",
     },
   ];
-  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   return (
     <>
-      <main className=" font-ProximaNova my-16">
+      <main className=" font-ProximaNova my-16 max-lg:my-4">
         <section className="flex flex-col justify-center items-center">
           <h1 className="text-5xl text-[#111010] font-bold text-center border-b-4 p-1 max-lg:text-2xl max-lg:border-b-2">
             Projects
@@ -51,7 +50,7 @@ const Projects = () => {
         </section>
 
         <section className="flex justify-center items-center gap-4 m-8">
-          {isMobile && (
+          
             <Carousel>
               {items.map((item) => (
                 <div
@@ -66,7 +65,6 @@ const Projects = () => {
                 </div>
               ))}
             </Carousel>
-          )}
         </section>
 
         <div className="flex justify-center items-center">

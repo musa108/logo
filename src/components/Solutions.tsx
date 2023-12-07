@@ -28,7 +28,7 @@ const Solutions = () => {
     <>
       <main>
         {items.map((item) => (
-          <div className="flex justify-center items-center gap-4 my-8">
+          <div className="flex justify-center items-center gap-4 my-8 max-lg:my-0">
             <div className="flex flex-col items-start gap-8 max-lg:ml-4">
               <h1 className="text-[#111010] lg:text-5xl  text-2xl font-bold lg:w-[580px] w-[388px] ">
                 {item.header}

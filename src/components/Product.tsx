@@ -5,6 +5,7 @@ import kitchen from "../assets/images/kitchen.png";
 import Vision from "./Vision";
 import Solutions from "./Solutions";
 
+
 type items = {
   id: number;
   image: string;
@@ -60,9 +61,9 @@ const Product = () => {
         <section className=" flex justify-center items-center gap-4 mx-4">
             <div className="flex justify-center items-center gap-4">
                 {item1.map((items)=>(
-                    <div className=" relative" key={items.id}>
+                    <div className=" relative max-lg: mt-4" key={items.id}>
                         <img src={items.image} alt="image" />
-                        <div className="bg-[#111010] text-[#FFF] max-w-max absolute bottom-[-2rem] left-4 p-3 max-lg:p-1 text-center">
+                        <div className="bg-[#111010] text-[#FFF] max-w-max absolute bottom-[-2rem] left-4 max-lg:left-0 max-lg:mx-2 p-3 max-lg:p-1 text-center">
                             <h1 className="text-2xl font-semibold max-lg:text-2xl">
                                 {items.header}
                             </h1>

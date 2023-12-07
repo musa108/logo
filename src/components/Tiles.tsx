@@ -8,6 +8,7 @@ import product6 from "../assets/images/product6.png";
 import product7 from "../assets/images/product7.png";
 import product8 from "../assets/images/product8.png";
 
+
 interface item {
   id: number;
   image: string;
@@ -78,25 +79,30 @@ const Tiles = () => {
   return (
     <>
       <section className="grid grid-cols-4 items-center gap-4 m-8">
-        {items.map((item) => (
-          <div
-            className="flex flex-col justify-center items-center border-[1px] drop-shadow-sm"
-            key={item.id}
-          >
-            <Link to="/productSection" className="flex flex-col justify-center items-center">
-              <img src={item.image} alt="" />
-              <h1 className="text-[#111010] text-2xl font-bold mt-4">
-                {item.name}
-              </h1>
-              <p className="text-[#CACACA] text-sm my-2">
-                {item.oldPrice}{" "}
-                <span className="text-[#B4B4B4] text-lg font-semibold">
-                  {item.newPrice}
-                </span>
-              </p>
-            </Link>
-          </div>
-        ))}
+      
+          {items.map((item) => (
+            <div
+              className="flex flex-col justify-center items-center border-[1px] drop-shadow-sm"
+              key={item.id}
+            >
+              <Link
+                to="/productSection"
+                className="flex flex-col justify-center items-center"
+              >
+                <img src={item.image} alt="" />
+                <h1 className="text-[#111010] text-2xl font-bold mt-4">
+                  {item.name}
+                </h1>
+                <p className="text-[#CACACA] text-sm my-2">
+                  {item.oldPrice}{" "}
+                  <span className="text-[#B4B4B4] text-lg font-semibold">
+                    {item.newPrice}
+                  </span>
+                </p>
+              </Link>
+            </div>
+          ))}
+        
       </section>
       <div className="flex justify-center items-center my-10">
         <button className="bg-[#111010] text-[#FFF] py-2 px-8 uppercase font-bold">
