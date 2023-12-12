@@ -3,10 +3,12 @@ import { lazy, Suspense } from "react";
 import "./styles/index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
+
 const App = lazy(() => import("./App.tsx"));
 const Home = lazy(() => import("./pages/Home.tsx"));
 const CatalogPage = lazy(()=> import('./pages/CatalogPage.tsx'))
 const ProductSection = lazy(()=> import('./pages/ProductSection.tsx'))
+const ShoppingCart = lazy(()=> import('./pages/ShoppingCart.tsx'))
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
             <ProductSection/>
         </Suspense>
        )
+  },
+  {
+        path:"/Shoppingcart",
+         element:(
+          <Suspense fallback={<div>Loading...</div>}>
+             <ShoppingCart />
+          </Suspense>
+         )
   }
 ]);
 

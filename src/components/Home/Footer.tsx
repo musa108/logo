@@ -1,4 +1,4 @@
-import logo from "../assets/images/footer-logo.svg";
+import logo from "/src/assets/images/footer-logo.svg";
 import Instagram from "@mui/icons-material/Instagram";
 import Facebook from "@mui/icons-material/Facebook";
 import Twitter from "@mui/icons-material/Twitter";

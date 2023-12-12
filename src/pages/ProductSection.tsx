@@ -1,12 +1,21 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../components/Home/Footer";
+import Header from "../components/Home/Header";
+import ProdCart from "../components/ProductSection/ProdCart";
+import ProdDescription from "../components/ProductSection/ProdDescription";
+import ProductNav from "../components/ProductSection/ProductNav";
+import RecentProd from "../components/ProductSection/RecentProd";
+import RelatedProd from "../components/ProductSection/RelatedProd";
 
 const ProductSection = () => {
   return (
     <>
       <main>
         <Header/>
-        <div className="text-center">Welcome to Product Section</div>
+        <ProductNav/>
+        <ProdCart/>
+        <ProdDescription/>
+        <RelatedProd/>
+        <RecentProd/>
         <Footer/>
       </main>
     </>

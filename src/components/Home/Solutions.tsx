@@ -1,7 +1,7 @@
-import mirrorImage from "../assets/images/mirror-image.png";
-import yellowChair from "../assets/images/yellow-chair.png";
-import laptopOnFloor from "../assets/images/laptop-on-floor.png";
-import flowerRoom from "../assets/images/flower-room.png";
+import mirrorImage from "/src/assets/images/mirror-image.png";
+import yellowChair from "/src/assets/images/yellow-chair.png";
+import laptopOnFloor from "/src/assets/images/laptop-on-floor.png";
+import flowerRoom from "/src/assets/images/flower-room.png";
 import PlayCircleFilledOutlinedIcon from "@mui/icons-material/PlayCircleFilledOutlined";
 
 interface item {

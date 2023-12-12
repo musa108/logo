@@ -1,7 +1,7 @@
-import bathroom from "../assets/images/bathroom.png";
-import Marble from "../assets/images/Marble.png";
-import outdoor from "../assets/images/outdoor.png";
-import kitchen from "../assets/images/kitchen.png";
+import bathroom from "/src/assets/images/bathroom.png";
+import Marble from "/src/assets/images/Marble.png";
+import outdoor from "/src/assets/images/outdoor.png";
+import kitchen from "/src/assets/images/kitchen.png";
 import Vision from "./Vision";
 import Solutions from "./Solutions";
 

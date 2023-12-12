@@ -1,10 +1,10 @@
-import CatalogBanner from "../components/CatalogBanner";
-import CatalogHero from "../components/CatalogHero";
-import CatalogSearch from "../components/CatalogSearch";
-import Categories from "../components/Categories";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Tiles from "../components/Tiles";
+import CatalogBanner from "../components/Catalog/CatalogBanner";
+import CatalogHero from "../components/Catalog/CatalogHero";
+import CatalogSearch from "../components/Catalog/CatalogSearch";
+import Categories from "../components/Home/Categories";
+import Footer from "../components/Home/Footer";
+import Header from "../components/Home/Header";
+import Tiles from "../components/Home/Tiles";
 
 const CatalogPage = () => {
   return (

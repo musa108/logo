@@ -1,7 +1,7 @@
-import kingdomTower from "../assets/images/kingsdom-tower.png";
-import dubaiMall from "../assets/images/dubai-mall.png";
-import kingRoad from "../assets/images/king-road-office.png";
-import beachTower from "../assets/images/beach-tower.png";
+import kingdomTower from "/src/assets/images/kingsdom-tower.png";
+import dubaiMall from "/src/assets/images/dubai-mall.png";
+import kingRoad from "/src/assets/images/king-road-office.png";
+import beachTower from "/src/assets/images/beach-tower.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 

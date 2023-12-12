@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import product1 from "../assets/images/product1.png";
-import product2 from "../assets/images/product2.png";
-import product3 from "../assets/images/product3.png";
-import product4 from "../assets/images/product4.png";
-import product5 from "../assets/images/product5.png";
-import product6 from "../assets/images/product6.png";
-import product7 from "../assets/images/product7.png";
-import product8 from "../assets/images/product8.png";
+import product1 from "/src/assets/images/product1.png";
+import product2 from "/src/assets/images/product2.png";
+import product3 from "/src/assets/images/product3.png";
+import product4 from "/src/assets/images/product4.png";
+import product5 from "/src/assets/images/product5.png";
+import product6 from "/src/assets/images/product6.png";
+import product7 from "/src/assets/images/product7.png";
+import product8 from "/src/assets/images/product8.png";
 
 
 interface item {
@@ -78,7 +78,7 @@ const Tiles = () => {
   ];
   return (
     <>
-      <section className="grid grid-cols-4 items-center gap-4 m-8">
+      <section className="grid grid-cols-4 items-center gap-4 m-8 bg-[url('/src/assets/images/TilesBG.png')]">
       
           {items.map((item) => (
             <div

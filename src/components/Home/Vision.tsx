@@ -1,4 +1,4 @@
-import Room from "../assets/images/Living-room.png";
+import Room from "/src/assets/images/Living-room.png";
 interface item {
   image: string;
   header: string;

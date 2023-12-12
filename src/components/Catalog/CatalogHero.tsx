@@ -1,4 +1,4 @@
-import CatalogHeroImage from "../assets/images/catalogHeroImage.png";
+import CatalogHeroImage from "/src/assets/images/catalogHeroImage.png";
 
 const CatalogHero = () => {
   return (

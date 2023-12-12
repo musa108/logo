@@ -1,6 +1,6 @@
-import balcony from "../assets/images/balcony.png";
-import sitting_room from "../assets/images/sitting-room.png";
-import floor_design from "../assets/images/floor-designs.png";
+import balcony from "/src/assets/images/balcony.png";
+import sitting_room from "/src/assets/images/sitting-room.png";
+import floor_design from "/src/assets/images/floor-designs.png";
 
 interface item {
   id: number;
@@ -38,7 +38,7 @@ const Categories = () => {
   return (
     <>
       <main className="flex justify-center items-center gap-x-4 my-8 mx-8">
-        <div className="bg-[#252525] text-[#FFFF]  py-20 px-4">
+        <div className="bg-[#252525] text-[#FFFF] py-20 px-4">
           <p className="text-base">Lorem Ipsum</p>
           <h1 className=" text-2xl font-bold">Categories</h1>
           <p className="text-[#BCBCBC] w-[255px] text-lg">

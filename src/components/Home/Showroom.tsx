@@ -1,4 +1,4 @@
-import showroom from "../assets/images/showroom.png";
+import showroom from "/src/assets/images/showroom.png";
 
 interface item {
   header: string;
