@@ -78,7 +78,7 @@ const Tiles = () => {
   ];
   return (
     <>
-      <section className="grid grid-cols-4 items-center gap-4 m-8 bg-[url('/src/assets/images/TilesBG.png')]">
+      <section className="grid grid-cols-4 max-lg:grid-cols-2 max-lg:gap-2 items-center gap-4 m-8 bg-[url('/src/assets/images/TilesBG.png')]">
       
           {items.map((item) => (
             <div
@@ -90,12 +90,12 @@ const Tiles = () => {
                 className="flex flex-col justify-center items-center"
               >
                 <img src={item.image} alt="" />
-                <h1 className="text-[#111010] text-2xl font-bold mt-4">
+                <h1 className="text-[#111010] text-2xl max-lg:text-xl font-bold mt-4 max-xl:mt-2">
                   {item.name}
                 </h1>
-                <p className="text-[#CACACA] text-sm my-2">
+                <p className="text-[#CACACA] text-sm max-lg:text-xs my-2">
                   {item.oldPrice}{" "}
-                  <span className="text-[#B4B4B4] text-lg font-semibold">
+                  <span className="text-[#B4B4B4] text-lg max-lg:text-base font-semibold">
                     {item.newPrice}
                   </span>
                 </p>
