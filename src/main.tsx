@@ -1,14 +1,14 @@
 import ReactDOM from "react-dom/client";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import "./styles/index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
-
-const App = lazy(() => import("./App.tsx"));
-const Home = lazy(() => import("./pages/Home.tsx"));
-const CatalogPage = lazy(()=> import('./pages/CatalogPage.tsx'))
-const ProductSection = lazy(()=> import('./pages/ProductSection.tsx'))
-const ShoppingCart = lazy(()=> import('./pages/ShoppingCart.tsx'))
+import { CartProvider } from "./context/CartContext.tsx";
+import { Checkout } from "./Lazyload/Checkout.tsx";
+import { ShoppingCart } from "./Lazyload/ShoppingCart.tsx";
+import { ProductSection } from "./Lazyload/ProductSection.tsx";
+import { CatalogPage } from "./Lazyload/CatalogPage.tsx";
+import { Home } from "./Lazyload/Home.tsx";
+import { App } from "./Lazyload/App.tsx";
 
 const router = createBrowserRouter([
   {
@@ -52,9 +52,19 @@ const router = createBrowserRouter([
              <ShoppingCart />
           </Suspense>
          )
+  },
+  {
+        path:"/checkout",
+         element:(
+          <Suspense fallback={<div>Loading...</div>}>
+             <Checkout />
+          </Suspense>
+         )
   }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <CartProvider>
+    <RouterProvider router={router} />
+  </CartProvider>
 );

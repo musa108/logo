@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-      <main className="mt-4 sticky top-0 z-50  bg-gray-100 py-2">
+      <main className=" sticky top-0 z-50  bg-[#FFF] py-2">
         <div className="flex justify-between items-center mx-4 ">
           <div className="md:hidden">
             <MenuIcon />
@@ -32,8 +32,8 @@ const Header = () => {
             <img src={logo} alt="" />
           </Link>
           <div className="md:hidden">
-            <Link to="/cart">
-              <ShoppingCartIcon />{" "}
+            <Link to="/Shoppingcart">
+              <ShoppingCartIcon />
             </Link>
           </div>
         </div>
@@ -57,8 +57,8 @@ const Header = () => {
             ))}
           </div>
           <div className=" flex justify-center items-center gap-4 max-lg:hidden">
-            <Link to="/cart">
-              <ShoppingCartIcon />{" "}
+            <Link to="/Shoppingcart">
+              <ShoppingCartIcon />
             </Link>
             <FavoriteBorderIcon />
             <Person2OutlinedIcon />

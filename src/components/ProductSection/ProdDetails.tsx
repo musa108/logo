@@ -2,6 +2,9 @@ import { useState, type FC } from "react";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { useCart } from "../../context/CartContext";
+import { useNavigate } from "react-router-dom";
+
 interface ProdDetailsProps {
   name: string;
   price: number;
@@ -9,7 +12,8 @@ interface ProdDetailsProps {
 
 const ProdDetails: FC<ProdDetailsProps> = ({name, price }) => {
   const [quantity, setQuantity] = useState(1);
-  
+  const {addToCart} = useCart();
+  const navigate = useNavigate();
  
 
   const increment = () => {
@@ -21,7 +25,15 @@ const ProdDetails: FC<ProdDetailsProps> = ({name, price }) => {
       setQuantity((prevQuantity) => prevQuantity - 1);
     }
   };
-
+  const handleAddToCart = () => {
+    addToCart({
+      id: Math.random().toString(), 
+      name,
+      price,
+      quantity,
+    });
+    navigate('/Shoppingcart')
+  };
   return (
     <>
       <main className="flex flex-col items-start gap-y-8">
@@ -46,7 +58,7 @@ const ProdDetails: FC<ProdDetailsProps> = ({name, price }) => {
               <AddIcon />
             </button>
           </div>
-          <button className="bg-[#111010] py-2 px-8 text-[#FFF]">
+          <button className="bg-[#111010] py-2 px-8 text-[#FFF] " onClick={handleAddToCart}>
             Add to Cart
           </button>
           <div className="border p-2">
