@@ -37,11 +37,11 @@ const Categories = () => {
   ];
   return (
     <>
-      <main className="flex justify-center items-center gap-x-4 my-8 mx-8">
-        <div className="bg-[#252525] text-[#FFFF] py-20 px-4">
-          <p className="text-base">Lorem Ipsum</p>
-          <h1 className=" text-2xl font-bold">Categories</h1>
-          <p className="text-[#BCBCBC] w-[255px] text-lg">
+      <main className="flex max-xl:flex-col justify-center items-center gap-x-4 my-8 mx-8 max-xl:gap-y-4">
+        <div className="bg-[#252525] text-[#FFFF] py-20 px-4 max-xl:py-8 max-xl:px-9">
+          <p className="text-base max-xl:text-sm">Lorem Ipsum</p>
+          <h1 className=" text-2xl font-bold  max-xl:text-lg">Categories</h1>
+          <p className="text-[#BCBCBC] w-[255px] text-lg ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s,

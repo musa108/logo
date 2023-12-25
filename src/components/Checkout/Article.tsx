@@ -8,7 +8,7 @@ interface ArticleProps {
 
 const Article: FC<ArticleProps> = ({ item }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-xl:p-2">
       <div className="flex justify-between gap-4 items-center my-2">
         <div className="flex items-center gap-2">
           <img src={productImage} alt="" className=" w-28 h-28" />

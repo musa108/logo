@@ -16,7 +16,7 @@ const ProdDescription = () => {
           <li className="text-[#000000] text-xl font-semibold cursor-pointer" onClick={hideDeatils}>Details</li>
           <li className="text-[#000000] text-xl font-semibold cursor-pointer" onClick={hideDeatils}>Reviews(0)</li>
         </ul>
-        <div className=" flex justify-center items-center w-[1290px]">
+        <div className=" flex justify-center items-center w-[1290px] max-xl:w-[300px] max-xl:ml-8">
           {details && (
             <p className="text-[#000]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce

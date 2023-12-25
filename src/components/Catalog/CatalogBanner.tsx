@@ -3,7 +3,7 @@ import banner from "/src/assets/images/Banner.png";
 const CatalogBanner = () => {
   return (
     <>
-      <main className="flex justify-center items-center gap-4 ml-32 mr-10 my-10 divide-x">
+      <main className="flex justify-center items-center gap-4 ml-32 mr-10 my-10 divide-x max-xl:hidden">
         <section className="max-w-[481px]">
           <h1 className=" text-4xl text-[#000] font-sans">
             Promotional Banner

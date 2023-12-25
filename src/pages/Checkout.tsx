@@ -17,14 +17,14 @@ const Checkout: FC<CheckoutProps> = () => {
   return (
     <>
       <Header />
-      <div className=" w-full pl-12 mt-2 bg-gray-100 p-1">
-        <h2 className="text-2xl font-bold ">Shopping Cart</h2>
+      <div className=" w-full pl-12 mt-2 bg-gray-100 p-1 max-xl:pl-6">
+        <h2 className="text-2xl font-bold max-xl:text-lg ">Shopping Cart</h2>
         <Link to="/productSection">
           {" "}
           <ArrowBack /> Continue Shopping
         </Link>
       </div>
-      <main className="flex justify-center items-start">
+      <main className="flex justify-center items-start max-xl:flex-col">
         <Form />
         <Payment />
         <section>

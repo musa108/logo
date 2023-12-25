@@ -6,7 +6,7 @@ import CheckBoxIcon from '@mui/icons-material/CheckBox';
 const Payment = () => {
   return (
     <>
-      <main className="p-4">
+      <main className="p-4 max-xl:p-2">
         <div className="flex justify-between items-center my-1 bg-[#FAFAFA]">
           <div className="flex items-center">
             <img src={PaypalIimage} alt="" />
@@ -28,13 +28,13 @@ const Payment = () => {
             </div>
             <CheckBoxIcon/>
         </div>
-        <form action="" className="flex flex-col items-center gap-y-4 bg-[#FAFAFA] py-8 px-4 my-8">
-            <input type="text" placeholder="Credit card number*" className="border w-[381px] h-[45px]"/>
-            <label className="flex gap-x-16 items-center">
+        <form action="" className="flex flex-col items-center gap-y-4 bg-[#FAFAFA] py-8 px-4 my-8 max-xl:py-2 max-xl:px-2">
+            <input type="text" placeholder="Credit card number*" className="border w-[381px] h-[45px] max-lg:w-[350px]"/>
+            <label className="flex gap-x-16 max-xl:gap-x-6 items-center">
                 <input type="text" placeholder="Expiry Date*" className="border w-[158px] h-[45px]"/>
                 <input type="text" placeholder="CVC / CVV*" className="border w-[158px] h-[45px]"/>
             </label>
-            <input type="text" placeholder="Name of Cardholder*" className="border w-[381px] h-[45px]"/>
+            <input type="text" placeholder="Name of Cardholder*" className="border w-[381px] h-[45px] max-xl:w-[350px]"/>
         </form>
       </main>
     </>

@@ -18,7 +18,7 @@ const ArticlePrice: FC<ArticlePriceProps> = ({ cart }) => {
   };
   return (
     <>
-      <main className="">
+      <main className=" max-xl:p-2 flex flex-col justify-center items-center">
         <div className="flex justify-between items-center my-4">
           <p className="text-lg font-bold">
             Total{" "}
@@ -26,8 +26,8 @@ const ArticlePrice: FC<ArticlePriceProps> = ({ cart }) => {
           </p>
           <p>${totalPrice.toFixed(2)} SAR</p>
         </div>
-        <button className="w-full bg-[#000] text-[#FFF] py-2 text-xl font-bold" onClick={handleCheckout}>
-          <Link to="/">Safe to checkout</Link>
+        <button className="w-full bg-[#000] text-[#FFF] py-2 text-xl font-bold max-xl:ml-6" onClick={handleCheckout}>
+          <Link to="/">checkout</Link>
         </button>
       </main>
     </>

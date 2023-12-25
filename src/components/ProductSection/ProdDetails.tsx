@@ -38,7 +38,7 @@ const ProdDetails: FC<ProdDetailsProps> = ({name, price }) => {
         <section className="flex flex-col gap-y-4">
           <h1 className="text-5xl font-bold">{name}</h1>
           <h3 className="text-3xl">${price}</h3>
-          <p className="text-[#616161] text-xl w-[610px]">
+          <p className="text-[#616161] text-xl w-[610px] max-xl:w-[300px]">
             Product Short Description senectus et netus et malesuada fames ac
             turpis egestas. Vesitbulum tortor quam, feugiat vitae, ultricies
             eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas

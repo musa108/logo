@@ -16,11 +16,11 @@ const ShoppingCart: React.FC<CartProps> = () => {
   return (
     <main className="">
       <Header />
-      <div className="pl-12 mt-2 bg-gray-100 p-1">
-      <h2 className="text-2xl font-bold ">Shopping Cart</h2>
+      <div className="pl-12 mt-2 bg-gray-100 p-1 max-xl:pl-6 flex flex-col items-start">
+      <h2 className="text-2xl font-bold max-xl:text-lg ">Shopping Cart</h2>
        <Link to="/productSection"> <ArrowBack/> Continue Shopping</Link>
       </div>
-      <section className=" flex gap-4 items-start m-8">
+      <section className=" flex max-xl:flex-col gap-4 items-start m-8">
         <div>
           {cart.map((item) => (
             <CartedItem
