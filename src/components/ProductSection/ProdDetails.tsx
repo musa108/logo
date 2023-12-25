@@ -3,7 +3,6 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { useCart } from "../../context/CartContext";
-import { useNavigate } from "react-router-dom";
 
 interface ProdDetailsProps {
   name: string;
@@ -13,7 +12,7 @@ interface ProdDetailsProps {
 const ProdDetails: FC<ProdDetailsProps> = ({name, price }) => {
   const [quantity, setQuantity] = useState(1);
   const {addToCart} = useCart();
-  const navigate = useNavigate();
+  
  
 
   const increment = () => {
@@ -32,7 +31,6 @@ const ProdDetails: FC<ProdDetailsProps> = ({name, price }) => {
       price,
       quantity,
     });
-    navigate('/Shoppingcart')
   };
   return (
     <>

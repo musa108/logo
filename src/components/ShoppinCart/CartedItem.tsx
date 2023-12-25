@@ -1,12 +1,11 @@
 import React from "react";
 import { CartItem } from "../../context/CartContext";
 import DeleteForever from "@mui/icons-material/DeleteForever";
-import productImage from '../../assets/images/productImage.png'
-
+import productImage from "../../assets/images/productImage.png";
 
 interface CartedItemProps {
   item: CartItem;
-  onRemove: () => void;
+  onRemove?: () => void;
 }
 
 const CartedItem: React.FC<CartedItemProps> = ({ item, onRemove }) => {
@@ -15,16 +14,18 @@ const CartedItem: React.FC<CartedItemProps> = ({ item, onRemove }) => {
       <div className="flex items-center gap-2">
         <img src={productImage} alt="" />
         <div className="flex flex-col">
-        <h3 className="text-xl font-semibold">{item.name}</h3>
+          <h3 className="text-xl font-semibold">{item.name}</h3>
           <p className="text-[#A1A1A1] text-sm">Lorem Ipsum</p>
         </div>
       </div>
       <div className="flex flex-col items-center">
         <h1 className="text-xl font-bold">Price</h1>
-        <p>${item.price} x {item.quantity} SAR</p>
+        <p>
+          ${item.price} x {item.quantity} SAR
+        </p>
       </div>
       <button className="text-red-500" onClick={onRemove}>
-        <DeleteForever/>
+        <DeleteForever />
       </button>
     </div>
   );

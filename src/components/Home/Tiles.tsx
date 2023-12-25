@@ -64,7 +64,7 @@ const Tiles = () => {
     {
       id: 7,
       image: product7,
-      name: "Sardinia White",
+      name: "Sardinia White 30×60",
       oldPrice: "449.99 SAR",
       newPrice: "312.49 SAR",
     },
@@ -90,10 +90,10 @@ const Tiles = () => {
                 className="flex flex-col justify-center items-center"
               >
                 <img src={item.image} alt="" />
-                <h1 className="text-[#111010] text-2xl max-lg:text-xl font-bold mt-4 max-xl:mt-2">
+                <h1 className="text-[#111010] text-2xl max-lg:text-xl font-bold mt-4 max-xl:mt-2 max-xl:p-2">
                   {item.name}
                 </h1>
-                <p className="text-[#CACACA] text-sm max-lg:text-xs my-2">
+                <p className="text-[#CACACA] text-sm max-lg:text-xs my-2 max-xl:p-2">
                   {item.oldPrice}{" "}
                   <span className="text-[#B4B4B4] text-lg max-lg:text-base font-semibold">
                     {item.newPrice}

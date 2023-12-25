@@ -20,7 +20,7 @@ const ShoppingCart: React.FC<CartProps> = () => {
       <h2 className="text-2xl font-bold ">Shopping Cart</h2>
        <Link to="/productSection"> <ArrowBack/> Continue Shopping</Link>
       </div>
-      <section className=" flex gap-4 items-center m-8">
+      <section className=" flex gap-4 items-start m-8">
         <div>
           {cart.map((item) => (
             <CartedItem

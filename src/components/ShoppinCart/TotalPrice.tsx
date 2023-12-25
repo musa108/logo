@@ -1,6 +1,7 @@
 import React from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { CartItem } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 interface TotalPriceProps {
   cart: CartItem[];
@@ -14,7 +15,7 @@ const TotalPrice: React.FC<TotalPriceProps> = ({ cart }) => {
   );
 
   return (
-    <div className="flex flex-col gap-4 border p-4 mt-4 bg-[#FAFAFA]">
+    <div className="flex flex-col gap-4 border p-4 mx-4 bg-[#FAFAFA]">
       <div className=" flex justify-between">
         <h3 className="text-xl font-bold">
           Do you have a voucher?{" "}
@@ -38,7 +39,10 @@ const TotalPrice: React.FC<TotalPriceProps> = ({ cart }) => {
         <p>${totalPrice.toFixed(2)} SAR</p>
       </div>
         <button className="w-full bg-[#000] text-[#FFF] py-2 text-xl font-bold">
-        Safe to checkout
+            <Link to='/checkout'>
+            Safe to checkout
+            </Link>
+     
         </button>
     </div>
   );

@@ -1,10 +1,10 @@
 import SearchIcon from "@mui/icons-material/Search";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "/src/assets/images/Logo.svg";
 import { Link, NavLink } from "react-router-dom";
+import CartIcon from "./CartIcon";
 
 type list = {
   id: number;
@@ -32,9 +32,7 @@ const Header = () => {
             <img src={logo} alt="" />
           </Link>
           <div className="md:hidden">
-            <Link to="/Shoppingcart">
-              <ShoppingCartIcon />
-            </Link>
+          <CartIcon/>
           </div>
         </div>
 
@@ -57,9 +55,7 @@ const Header = () => {
             ))}
           </div>
           <div className=" flex justify-center items-center gap-4 max-lg:hidden">
-            <Link to="/Shoppingcart">
-              <ShoppingCartIcon />
-            </Link>
+           <CartIcon/>
             <FavoriteBorderIcon />
             <Person2OutlinedIcon />
           </div>

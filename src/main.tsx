@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         path:"/checkout",
          element:(
           <Suspense fallback={<div>Loading...</div>}>
-             <Checkout />
+             <Checkout/>
           </Suspense>
          )
   }
