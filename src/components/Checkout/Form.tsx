@@ -4,7 +4,7 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox";
 const Form = () => {
   return (
     <>
-      <main className="my-4 p-4 bg-[#FAFAFA]">
+      <main className="my-4 p-4 max-xl:m-auto bg-[#FAFAFA]">
         <form action="" className="flex flex-col gap-y-4">
           <div className="flex items-center text-sm">
             <button className="border bg-[#000] text-[#FFF] py-2 px-4">

@@ -18,7 +18,7 @@ const ArticlePrice: FC<ArticlePriceProps> = ({ cart }) => {
   };
   return (
     <>
-      <main className=" max-xl:p-2 flex flex-col justify-center items-center">
+      <main className=" max-xl:p-2 flex flex-col justify-center items-center max-xl:mx-auto">
         <div className="flex justify-between items-center my-4">
           <p className="text-lg font-bold">
             Total{" "}

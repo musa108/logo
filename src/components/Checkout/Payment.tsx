@@ -6,7 +6,7 @@ import CheckBoxIcon from '@mui/icons-material/CheckBox';
 const Payment = () => {
   return (
     <>
-      <main className="p-4 max-xl:p-2">
+      <main className="p-4 max-xl:p-2 max-xl:m-auto">
         <div className="flex justify-between items-center my-1 bg-[#FAFAFA]">
           <div className="flex items-center">
             <img src={PaypalIimage} alt="" />
